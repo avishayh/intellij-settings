@@ -5,10 +5,7 @@
     <variable name="PROPERTY_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="D_PROPERTY_NAME" expression="decapitalize(PROPERTY_NAME)" defaultValue="" alwaysStopAt="false" />
     <context>
-      <option name="ASPECTJ" value="false" />
       <option name="COMPLETION" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="HAML" value="false" />
       <option name="JAVA_CODE" value="true" />
       <option name="JAVA_COMMENT" value="false" />
       <option name="JAVA_STRING" value="false" />
@@ -20,10 +17,7 @@
     <variable name="PROPERTY_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PROPERTY_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="ASPECTJ" value="false" />
       <option name="COMPLETION" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="HAML" value="false" />
       <option name="JAVA_CODE" value="true" />
       <option name="JAVA_COMMENT" value="false" />
       <option name="JAVA_STRING" value="false" />
@@ -32,10 +26,7 @@
   </template>
   <template name="dudi" value="System.out.println(&quot;Dudi&quot;);" description="prints Dudi name" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="ASPECTJ" value="false" />
       <option name="COMPLETION" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="HAML" value="false" />
       <option name="JAVA_CODE" value="true" />
       <option name="JAVA_COMMENT" value="false" />
       <option name="JAVA_STRING" value="false" />
