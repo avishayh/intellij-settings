@@ -1,0 +1,104 @@
+<templateSet group="pearl-client">
+  <template name="def" value="define(['idi'], function (idi) {&#10;&#9;&#9;$END$  &#10;});" description="new requirejs module defenation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ctrl" value="idi.controller('$name$', function ($$scope) {&#10;&#9;&#9; $END$&#10;&#9;})" description="new controller with scope" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="Ctrl" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="fact" value="idi.factory('$name$', function ($dep$) {&#10;&#9;&#9;$END$&#10;&#9;})" description="new factory service" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dep" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="serv" value="idi.service('$name$', function ($dep$) {&#10;&#9;&#9;$END$&#10;&#9;})" description="new  service" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dep" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cons" value="idi.constant('$name$', function ($$scope) {&#10;&#9;&#9; $END$&#10;&#9;})" description="new constant service" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="Ctrl" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="val" value="idi.value('$name$', function ($$scope) {&#10;&#9;&#9; $END$&#10;&#9;})" description="new value service" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="Ctrl" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="config" value="idi.config(function($deps$) {&#10;&#9;$END$&#9;&#9;&#10;&#9;})" description="config block" toReformat="true" toShortenFQNames="true">
+    <variable name="deps" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="run" value="idi.run(function($deps$) {&#10;&#9;$END$&#9;&#9;&#10;&#9;})" description="run block" toReformat="true" toShortenFQNames="true">
+    <variable name="deps" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="sobj" value="$$scope.$name$ = {&#10;&#9;$END$&#10;}" description="object on scope" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="sfunc" value="$$scope.$name$ = function ($args$) {&#10;&#9;$END$&#10;}" description="sfunc on scope" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="oval" value="$key$ : '$value$'$END$&#10;" description="value on object" toReformat="false" toShortenFQNames="true">
+    <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ofunc" value="$key$ : function ($args$) {&#10;&#9;$END$&#10;}&#10;" description="function on object" toReformat="false" toShortenFQNames="true">
+    <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="when" value=".when('$url$', {templateUrl: '$template$'})&#10;$END$" description="routing when" toReformat="true" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="template" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="route" value="$routeProvider&#10;&#9;$END$&#9;&#9;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#10;&#9;.otherwise({redirectTo: '/'});" description="default routing block to use in config" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="whenc" value=".when('$url$', {templateUrl: '$template$', controller: '$ctrlname$'})&#10;$END$" description="routing with controller" toReformat="true" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="template" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ctrlname" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="obj" value="var $name$ = {&#10;&#9;$END$&#10;}" description="plain object" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

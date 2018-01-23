@@ -1,0 +1,16 @@
+<templateSet group="Web Services">
+  <template name="mxb" value="try {&#10;  $Type$ $object$ = $Type$.Factory.newInstance();&#10;  $object$.save(new java.io.File(&quot;$filename$&quot;));&#10;} catch (java.io.IOException e) {&#10;  e.printStackTrace();&#10;}" description="Generate XmlBeans object 2 xml serialization" toReformat="true" toShortenFQNames="true">
+    <variable name="Type" expression="&quot;TypeToMarshal&quot;" defaultValue="&quot;TypeToMarshal&quot;" alwaysStopAt="true" />
+    <variable name="object" expression="&quot;objectToMarshal&quot;" defaultValue="&quot;objectToMarshal&quot;" alwaysStopAt="true" />
+    <variable name="filename" expression="complete()" defaultValue="&quot;filename.xml&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="JAVA_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="jaxrs" value="try {&#10;  com.sun.net.httpserver.HttpServer server = com.sun.jersey.api.container.httpserver.HttpServerFactory.create(&quot;http://localhost:9998/&quot;);&#10;  server.start();&#10;  &#10;  System.out.println(&quot;Server running&quot;);&#10;  System.out.println(&quot;Visit: http://localhost:9998/helloworld&quot;);&#10;  System.out.println(&quot;Hit return to stop...&quot;);&#10;  System.in.read();&#10;  System.out.println(&quot;Stopping server&quot;);   &#10;  server.stop(0);&#10;  System.out.println(&quot;Server stopped&quot;);&#10;} catch (java.io.IOException ioe) {&#10;  ioe.printStackTrace(System.err);&#10;}" description="Generate Rest web service invocation" toReformat="true" toShortenFQNames="false" />
+  <template name="cxf" value="$ServiceInterfaceName$ service = org.apache.cxf.jaxrs.client.JAXRSClientFactory.create(&quot;$ServiceUrl$&quot;, $ServiceInterfaceName$.class);&#10;           String out = service.getClichedMessage();&#10;           System.out.println(&quot;service response was: &quot; + out);" description="Generate CXF Rest web service invocation" toReformat="true" toShortenFQNames="false">
+    <variable name="ServiceInterfaceName" expression="annotated(&quot;javax.ws.rs.Path&quot;)" defaultValue="&quot;MyServiceName&quot;" alwaysStopAt="true" />
+    <variable name="ServiceUrl" expression="&quot;http://localhost:8080/cxfrestsample&quot;" defaultValue="&quot;http://localhost:8080/cxfrestsample&quot;" alwaysStopAt="true" />
+  </template>
+</templateSet>

@@ -1,0 +1,29 @@
+<templateSet group="Ophir">
+  <template name="to" value="//todo  $USER$ &gt;&gt; " description="Personalized todo task" toReformat="false" toShortenFQNames="true">
+    <variable name="USER" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="toim" value="// todo ophir &gt;&gt; implement" description="To be implemented task" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="tore" value="//todo $USER$ &gt;&gt; remove legacy processor reference:" description="todo task - remove this code soon" toReformat="false" toShortenFQNames="true">
+    <variable name="USER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+</templateSet>

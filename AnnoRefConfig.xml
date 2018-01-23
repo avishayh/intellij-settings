@@ -1,0 +1,13 @@
+<application>
+  <component name="AnnoRefSettings">
+    <option name="ENABLE_SQLREF_FQN_OVERRIDE" value="true" />
+    <option name="ANNOREF_ANNOTATION_FQN" value="com.idi.framework.util.jdbc.api.annotation.SQLRef" />
+    <option name="ANNO_ANNOTATION_FQN" value="com.idi.framework.util.jdbc.api.annotation.SQL" />
+    <option name="SP_VIEW_ANNOTATION_FQN" value="com.idi.framework.util.jdbc.api.annotation.SP" />
+    <option name="SP_DATA_SOURCE_NAME" value="USERTEST" />
+    <option name="ANNO_REF_SUPER_INTERFACE" value="com.idi.framework.util.jdbc.api.Query" />
+    <option name="ANNO_ALL_SYNTAX_HIGHLIGHT_COLOR" value="#990033" />
+    <option name="CONNECTION_METHOD_WAY" value="Connection-Pool" />
+  </component>
+</application>
+

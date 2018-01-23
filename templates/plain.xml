@@ -1,0 +1,8 @@
+<templateSet group="plain">
+  <template name="psfs" value="private static final String EXPRESSION = &quot;&quot;; " description="public static final String" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

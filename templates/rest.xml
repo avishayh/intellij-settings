@@ -1,0 +1,33 @@
+<templateSet group="rest">
+  <template name="zexe" value="CentralExceptionHandler.handleException(e);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="zin" value="IDIFrameworkConstants.IN_DATA+&quot;.&quot;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="zout" value="IDIFrameworkConstants.OUT_DATA+&quot;.&quot;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="reasy" value="@com.idi.pearl.general.common.annotations.PearlService&#10;@org.springframework.context.annotation.Scope(&quot;session&quot;)&#10;@javax.ws.rs.Path(&quot;&quot;)" description="define all annotations for class to create a rest + spring service" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="rgetj" value="@Path(&quot;/&quot;)&#10;@GET&#10;@Produces(value = {MediaType.APPLICATION_JSON, &quot;text/json&quot;})&#10;@Consumes(value = {MediaType.APPLICATION_JSON, &quot;text/json&quot;})&#10;&#10;&#10;" description="rest method with consumer/producer/path annotations for get requests to json only mime type" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="rget" value="@Path(&quot;/&quot;)&#10;@GET&#10;@Produces(&quot;*/*&quot;)&#10;public String $METHOD$ {&#10;&#9;&#10;}&#10;&#10;" description="rest method with consumer/producer/path annotations for get requests to all mime types" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

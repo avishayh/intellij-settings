@@ -1,0 +1,49 @@
+<templateSet group="PearlApplication">
+  <template name="test" value="describe('$description$', function () {&#10;&#10;    var ctrl;&#10;    var scope;&#10;&#10;    /**&#10;     * before each test, create the module and inject a controller&#10;     * and a scope for it&#10;     */&#10;    beforeEach(module('idi'));&#10;    beforeEach(inject(function ($controller, $rootScope) {&#10;&#10;        scope = $rootScope.$new();&#10;        ctrl = $controller('$controllername$', {$scope: scope});&#10;&#10;    }));&#10;&#10;        // this is the actual test&#10;&#9;&#9; it('$test_description$', function () {&#9;&#9;&#9;&#10;&#9;&#9;&#9;expect(scope.alerts.length).toEqual(0);&#9;&#9;&#9;&#10;&#9;&#9;});      &#9;  &#10;&#9;&#9;    &#10;});" description="test angular controller" toReformat="false" toShortenFQNames="true">
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controllername" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="test_description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="module" value="define([IDI], function (idi) {&#10;&#9;&#10;    &#10;});" description="add an require module" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="idictrl" value="idi.controller('$controllerName$', function($$scope) {&#10;                &#10;});&#10;" description="angular controller" toReformat="false" toShortenFQNames="true">
+    <variable name="controllerName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="idimain" value="/**&#10; * Index.js acts as a Main entry point to the application.&#10; * at its core it depend on the pre-defined IDI module.&#10; * each package on the app should be included as a dependency as well.&#10; * on this example, this app contain a client screen and a welcome screen.&#10; */&#10;define([IDI], function (idi) {&#10;&#10;    idi.config(function ($$routeProvider) {&#10;        &#10;        // routing configuration&#10;        $$routeProvider            &#10;            .when('/', {templateUrl: '$templatePath$'})&#10;    });&#10;    &#10;    &#10;    &#10;    /*&#10;     * Manual bootstrapping angular module.&#10;     * do not delete or relocate this line.&#10;     */&#10;   ng.bootstrap(document, ['idi']);&#10;});" description="main js entry point for an app" toReformat="true" toShortenFQNames="true">
+    <variable name="templatePath" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="when" value=".when('$route$', {templateUrl: '$url$'})" description="angular route in the config section" toReformat="false" toShortenFQNames="true">
+    <variable name="route" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="it" value="it('$desc$', function () {&#9;&#9;&#9;&#10;&#9;expect($excpections$).$end$;&#9;&#10;});     " description="it blcok for test" toReformat="true" toShortenFQNames="true">
+    <variable name="desc" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="excpections" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="factory" value="idi.factory('$factory_name$', function ($$http) {&#10;&#9;&#9;&#9;$_$&#10;&#10;&#9;&#9;&#9;return {                &#9;&#9;&#9;&#9;                &#10;&#9;&#9;&#9;};&#10;&#9;&#9;}&#10;&#9;)" description="angular factory" toReformat="true" toShortenFQNames="true">
+    <variable name="factory_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="_" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,51 @@
+<keymap version="1" name="IDI_New" parent="$default">
+  <action id="Annotate">
+    <keyboard-shortcut first-keystroke="alt A" />
+  </action>
+  <action id="Console.TableResult.SetDefault" />
+  <action id="EditorCutLineBackward">
+    <keyboard-shortcut first-keystroke="control alt D" />
+  </action>
+  <action id="SwitchApply">
+    <keyboard-shortcut first-keystroke="shift alt ENTER" />
+  </action>
+  <action id="SwitchDown">
+    <keyboard-shortcut first-keystroke="shift alt DOWN" />
+  </action>
+  <action id="SwitchLeft">
+    <keyboard-shortcut first-keystroke="shift alt LEFT" />
+  </action>
+  <action id="SwitchRight">
+    <keyboard-shortcut first-keystroke="shift alt RIGHT" />
+  </action>
+  <action id="SwitchUp">
+    <keyboard-shortcut first-keystroke="shift alt UP" />
+  </action>
+  <action id="Tool_Explorer_Explorer">
+    <keyboard-shortcut first-keystroke="alt E" />
+  </action>
+  <action id="Tool_Generator_Generator">
+    <keyboard-shortcut first-keystroke="shift control G" />
+  </action>
+  <action id="Tool_Generator_QueryGenerator">
+    <keyboard-shortcut first-keystroke="control alt Q" />
+  </action>
+  <action id="Tool_Generator_TypeValidation">
+    <keyboard-shortcut first-keystroke="shift control X" />
+  </action>
+  <action id="Tool_Maven_jar to jboss">
+    <keyboard-shortcut first-keystroke="alt J" />
+  </action>
+  <action id="Tool_Maven_mvn install">
+    <keyboard-shortcut first-keystroke="alt I" />
+  </action>
+  <action id="UpdateFiles">
+    <keyboard-shortcut first-keystroke="alt U" />
+  </action>
+  <action id="Vcs.ShowHistoryForBlock">
+    <keyboard-shortcut first-keystroke="shift alt H" />
+  </action>
+  <action id="Vcs.ShowTabbedFileHistory">
+    <keyboard-shortcut first-keystroke="alt H" />
+  </action>
+</keymap>

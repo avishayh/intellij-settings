@@ -1,0 +1,20 @@
+<templateSet group="idi-web">
+  <template name="gwc" value="private org.apache.wicket.Component get$GETTER_NAME$() {&#10;&#9;&#9;java.lang.String id = &quot;$COMPONENT_ID$&quot;;&#10;&#9;&#9;org.apache.wicket.Component component = get(id);&#10;&#9;&#9;if (component != null) {&#10;&#9;&#9;&#9;return component;&#10;&#9;&#9;}&#10;&#9;&#9;return new $COMPONENT_TYPE$(id);&#10;&#9;}" description="Get Wicket component method" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="GETTER_NAME" expression="capitalize(COMPONENT_ID)" defaultValue="" alwaysStopAt="false" />
+    <variable name="COMPONENT_TYPE" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="CSS" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="JSP" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+</templateSet>

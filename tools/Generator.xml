@@ -1,0 +1,23 @@
+<toolSet name="Generator">
+  <tool name="Generator" description="Generator" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="java " />
+      <option name="PARAMETERS" value="-Dfile.encoding=UTF8  -classpath &quot;$Classpath$&quot;  com.idi.framework.tools.generation.VOGeneratorTool $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="TypeValidation" description="Validates your Class" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="java" />
+      <option name="PARAMETERS" value="-classpath &quot;$Classpath$&quot; com.idi.framework.common.tools.validation.TypeValidationRunner $FileClass$" />
+      <option name="WORKING_DIRECTORY" />
+    </exec>
+  </tool>
+  <tool name="QueryGenerator" description="QueryGenerator" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="java" />
+      <option name="PARAMETERS" value="-Dfile.encoding=UTF8  -classpath &quot;$Classpath$&quot;  com.idi.framework.tools.generation.queryVoGenerator.component.MainGenerator $FileDir$" />
+      <option name="WORKING_DIRECTORY" />
+    </exec>
+  </tool>
+</toolSet>

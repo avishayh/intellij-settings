@@ -1,0 +1,59 @@
+<templateSet group="iterations">
+  <template name="itco" value="for(java.util.Iterator&lt;$ELEMENT_TYPE$&gt; $ITER$ = $COLLECTION$.iterator(); $ITER$.hasNext(); ) {&#10;  $ELEMENT_TYPE$ $VAR$ = $ITER$.next();&#10;  $END$&#10;}" description="Iterate elements of java.util.Collection" toReformat="true" toShortenFQNames="true">
+    <variable name="ITER" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLLECTION" expression="variableOfType(&quot;java.util.Collection&quot;)" defaultValue="&quot;collection&quot;" alwaysStopAt="true" />
+    <variable name="ELEMENT_TYPE" expression="guessElementType(COLLECTION)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="iten" value="while($ENUM$.hasMoreElements()){&#10;  $TYPE$ $VAR$ = ($TYPE$)$ENUM$.nextElement();&#10;  $END$&#10;}" description="Iterate java.util.Enumeration" toReformat="true" toShortenFQNames="true">
+    <variable name="ENUM" expression="variableOfType(&quot;java.util.Enumeration&quot;)" defaultValue="&quot;enumeration&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="&quot;Object&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="iter" value="for (final $ELEMENT_TYPE$ $VAR$ : $ITERABLE_TYPE$) {&#10;  $END$&#10;}" description="Iterate Iterable | Array in J2SDK 5.0 syntax" toReformat="true" toShortenFQNames="true">
+    <variable name="ITERABLE_TYPE" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ELEMENT_TYPE" expression="iterableComponentType(ITERABLE_TYPE)" defaultValue="&quot;java.lang.Object&quot;" alwaysStopAt="false" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="itit" value="while($ITER$.hasNext()){&#10;  $TYPE$ $VAR$ = ($TYPE$)$ITER$.next();&#10;  $END$&#10;}" description="Iterate java.util.Iterator" toReformat="true" toShortenFQNames="true">
+    <variable name="ITER" expression="variableOfType(&quot;java.util.Iterator&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="&quot;Object&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="itli" value="for (int $INDEX$ = 0; $INDEX$ &lt; $LIST$.size(); $INDEX$++) {&#10;  $ELEMENT_TYPE$ $VAR$ = ($ELEMENT_TYPE$)$LIST$.get($INDEX$);&#10;  $END$&#10;}" description="Iterate elements of java.util.List" toReformat="true" toShortenFQNames="false">
+    <variable name="INDEX" expression="suggestIndexName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="LIST" expression="variableOfType(&quot;java.util.List&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ELEMENT_TYPE" expression="guessElementType(LIST)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="&quot;o&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="itve" value="for(int $INDEX$ = 0; $INDEX$ &lt; $VECTOR$.size(); $INDEX$++) {&#10;  $ELEMENT_TYPE$ $VAR$ = ($ELEMENT_TYPE$)$VECTOR$.elementAt($INDEX$);&#10;  $END$&#10;}" description="Iterate elements of java.util.Vector" toReformat="true" toShortenFQNames="true">
+    <variable name="INDEX" expression="suggestIndexName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VECTOR" expression="variableOfType(&quot;java.util.Vector&quot;)" defaultValue="&quot;vector&quot;" alwaysStopAt="true" />
+    <variable name="ELEMENT_TYPE" expression="guessElementType(VECTOR)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

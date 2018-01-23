@@ -1,0 +1,15 @@
+<templateSet group="html/xml">
+  <template name="&lt;c" value="&lt;code&gt;&lt;/code&gt;" description="&lt;code&gt; tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="COMPLETION" value="true" />
+      <option name="HTML" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="t/f" value="&lt;code&gt;true&lt;/code&gt;&#10;&lt;code&gt;false&lt;/code&gt; otherwise." description="boolean return type in code tags (javadoc context)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="COMPLETION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

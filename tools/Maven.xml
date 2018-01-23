@@ -1,0 +1,42 @@
+<toolSet name="Maven">
+  <tool name="mvn install" description="mvn install current module " showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="mvn.bat" />
+      <option name="PARAMETERS" value="install -f $ModuleFileDir$\pom.xml" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+
+  <tool name="jar to jboss" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="j2j.bat" />
+      <option name="PARAMETERS" value="$ModuleFileDir$ $ProjectFileDir$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+
+  <tool name="jar to applet" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="j2a.bat" />
+      <option name="PARAMETERS" value="$ModuleFileDir$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>  
+ 
+  <tool name="sync dependencies" description="mvn house-keeper sync the current project to the latest artifiacts" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="mvn-sync.bat" />
+      <option name="PARAMETERS" value="house-keeper:sync-module -f  $ModuleFileDir$\pom.xml" />
+      <option name="WORKING_DIRECTORY" value="$ModuleFileDir$" />
+    </exec>
+  </tool>
+  
+  <tool name="Sort Pom.xml" description="Sorts the pom xml file" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\CommandLineTools\mvnPomSort.bat" />
+      <option name="PARAMETERS" value="$ModuleFileDir$" />
+      <option name="WORKING_DIRECTORY" value="$ModuleFileDir$" />
+    </exec>
+  </tool>
+
+</toolSet>

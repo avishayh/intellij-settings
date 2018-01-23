@@ -1,0 +1,83 @@
+<templateSet group="log">
+  <template name="logdeb" value="log.debug(&quot;$END$&quot;);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logdec" value="private static final Log log = LogService.getLog($CLASS_NAME$.class);" description="Logger decleration" toReformat="true" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logen" value="log.entry(&quot;$METHOD_NAME$&quot;);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logerr" value="log.error(&quot;$METHOD$(): Exception=&quot;+$ERR$.getMessage(),$ERR$);" description="" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="ERR" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logex" value="log.exit(&quot;$METHOD_NAME$&quot;);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="lognew" value="log.entry(&quot;$METHOD_NAME$&quot;);&#10;    $END$&#10;log.exit(&quot;$METHOD_NAME$&quot;);" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logcon" value="IDICommonUtil.printContextHeirarchy(getContext());" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logifdeb" value="if(log.isDebugEnabled()) {&#10;log.debug(&quot;$METHOD_NAME$():&quot;);&#10;}" description="log debug in within if Log debug enabled" toReformat="true" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logifdev" value="if(log.isDebugEnabled()) {&#10;log.debug(&quot;$METHOD_NAME$(): $VAR0$=&quot; + $VAR0$);&#10;}" description="log debug in within if Log debug enabled + variable" toReformat="true" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="login" value="log.info(&quot;$METHOD_NAME$():&quot;);" description="log info method name" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="loginv" value="log.info(&quot;$METHOD_NAME$(): $VAR0$=&quot; + $VAR0$);" description="log info with method name &amp; variable" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR0" expression="methodParameters()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logifdevs" value="if(log.isDebugEnabled()) {&#10;log.debug(&quot;$METHOD_NAME$(): $VAR0$=&quot; + $VAR0$);&#10;}" description="log debug in within if Log debug enabled + variable" toReformat="true" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logargs" value="log.info(&quot;$METHOD$(): &quot; + $ARGS$); " description="logging method arguments using smart templating" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="ARGS" expression="MethodSmartArgsCamelCase" defaultValue="" alwaysStopAt="false" />
+    <variable name="METHOD" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

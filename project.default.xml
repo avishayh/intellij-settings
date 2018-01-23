@@ -1,0 +1,335 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="CompilerConfiguration">
+        <option name="DEFAULT_COMPILER" />
+        <wildcardResourcePatterns>
+          <entry name="!?*.java" />
+          <entry name="!?*.form" />
+          <entry name="!?*.class" />
+          <entry name="!?*.groovy" />
+          <entry name="!?*.scala" />
+          <entry name="!?*.flex" />
+          <entry name="!?*.kt" />
+          <entry name="!?*.clj" />
+        </wildcardResourcePatterns>
+      </component>
+      <component name="CompilerWorkspaceConfiguration">
+        <option name="PARALLEL_COMPILATION" value="true" />
+      </component>
+      <component name="CopyrightManager" default="" />
+      <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+        <file url="PROJECT" charset="UTF-8" />
+      </component>
+      <component name="InspectionProjectProfileManager">
+        <option name="useProjectProfile" value="false" />
+        <option name="PROJECT_PROFILE" />
+        <option name="USE_PROJECT_PROFILE" value="false" />
+        <version value="1.0" />
+      </component>
+      <component name="JavaScriptSettings">
+        <option name="languageLevel" value="ES6" />
+      </component>
+      <component name="JsFlowSettings">
+        <service-enabled>true</service-enabled>
+        <exe-path />
+        <annotation-enable>false</annotation-enable>
+        <other-services-enabled>true</other-services-enabled>
+        <auto-save>true</auto-save>
+      </component>
+      <component name="MavenImportPreferences">
+        <option name="generalSettings">
+          <MavenGeneralSettings>
+            <option name="mavenHome" value="C:/Program Files/apache-maven-3.5.0" />
+            <option name="threads" value="2C" />
+          </MavenGeneralSettings>
+        </option>
+      </component>
+      <component name="ProjectInspectionProfilesVisibleTreeState">
+        <entry key="Project Default">
+          <profile-state>
+            <expanded-state>
+              <State>
+                <id />
+              </State>
+            </expanded-state>
+            <selected-state>
+              <State>
+                <id>Abstraction issues</id>
+              </State>
+            </selected-state>
+          </profile-state>
+        </entry>
+      </component>
+      <component name="ProjectModuleManager">
+        <modules />
+      </component>
+      <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" />
+      <component name="PropertiesComponent">
+        <property name="GoToClass.includeLibraries" value="false" />
+        <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+        <property name="GoToFile.includeJavaFiles" value="false" />
+        <property name="MemberChooser.sorted" value="false" />
+        <property name="MemberChooser.showClasses" value="true" />
+        <property name="MemberChooser.copyJavadoc" value="false" />
+        <property name="options.lastSelected" value="Errors" />
+        <property name="options.splitter.main.proportions" value="0.3" />
+        <property name="options.splitter.details.proportions" value="0.2" />
+        <property name="options.searchVisible" value="true" />
+        <property name="recentsLimit" value="5" />
+        <property name="project.structure.last.edited" value="Project" />
+        <property name="project.structure.proportion" value="0.0" />
+        <property name="project.structure.side.proportion" value="0.2036824" />
+        <property name="restartRequiresConfirmation" value="true" />
+        <property name="settings.editor.selected.configurable" value="File.Encoding" />
+        <property name="JavaScriptPreferStrict" value="false" />
+        <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+      </component>
+      <component name="RunManager" selected="Remote.j1ut2">
+        <configuration default="true" type="Applet" factoryName="Applet">
+          <option name="WIDTH" value="400" />
+          <option name="HEIGHT" value="300" />
+          <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+          <module />
+          <method />
+        </configuration>
+        <configuration default="true" type="Application" factoryName="Application">
+          <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+          <option name="MAIN_CLASS_NAME" />
+          <option name="VM_PARAMETERS" value="-ea -XX:MaxDirectMemorySize=30m -Xmx1024m" />
+          <option name="PROGRAM_PARAMETERS" />
+          <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+          <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+          <option name="ALTERNATIVE_JRE_PATH" />
+          <option name="ENABLE_SWING_INSPECTOR" value="false" />
+          <option name="ENV_VARIABLES" />
+          <option name="PASS_PARENT_ENVS" value="true" />
+          <module name="" />
+          <envs />
+          <method />
+        </configuration>
+        <configuration default="true" type="JUnit" factoryName="JUnit">
+          <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+          <module name="" />
+          <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+          <option name="ALTERNATIVE_JRE_PATH" />
+          <option name="PACKAGE_NAME" />
+          <option name="MAIN_CLASS_NAME" />
+          <option name="METHOD_NAME" />
+          <option name="TEST_OBJECT" value="class" />
+          <option name="VM_PARAMETERS" value="-ea -XX:MaxDirectMemorySize=30m -Xmx1024m" />
+          <option name="PARAMETERS" />
+          <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+          <option name="ENV_VARIABLES" />
+          <option name="PASS_PARENT_ENVS" value="true" />
+          <option name="TEST_SEARCH_SCOPE">
+            <value defaultName="moduleWithDependencies" />
+          </option>
+          <envs />
+          <patterns />
+          <method />
+        </configuration>
+        <configuration default="true" type="Remote" factoryName="Remote">
+          <option name="USE_SOCKET_TRANSPORT" value="true" />
+          <option name="SERVER_MODE" value="false" />
+          <option name="SHMEM_ADDRESS" value="javadebug" />
+          <option name="HOST" value="localhost" />
+          <option name="PORT" value="5005" />
+          <method />
+        </configuration>
+        <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+          <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+          <module name="" />
+          <envs />
+          <method />
+        </configuration>
+        <configuration default="true" type="TestNG" factoryName="TestNG">
+          <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+          <module name="" />
+          <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+          <option name="ALTERNATIVE_JRE_PATH" />
+          <option name="SUITE_NAME" />
+          <option name="PACKAGE_NAME" />
+          <option name="MAIN_CLASS_NAME" />
+          <option name="METHOD_NAME" />
+          <option name="GROUP_NAME" />
+          <option name="TEST_OBJECT" value="CLASS" />
+          <option name="VM_PARAMETERS" value="-ea -XX:MaxDirectMemorySize=30m -Xmx1024m" />
+          <option name="PARAMETERS" />
+          <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+          <option name="OUTPUT_DIRECTORY" />
+          <option name="ANNOTATION_TYPE" />
+          <option name="ENV_VARIABLES" />
+          <option name="PASS_PARENT_ENVS" value="true" />
+          <option name="TEST_SEARCH_SCOPE">
+            <value defaultName="singleModule" />
+          </option>
+          <option name="USE_DEFAULT_REPORTERS" value="false" />
+          <option name="PROPERTIES_FILE" />
+          <envs />
+          <properties />
+          <listeners />
+          <method />
+        </configuration>
+        <configuration default="false" name="LogServer" type="Application" factoryName="Application" singleton="true">
+          <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+          <option name="MAIN_CLASS_NAME" value="LogServer" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+          <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+          <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+          <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+          <option name="ENABLE_SWING_INSPECTOR" value="false" />
+          <option name="ENV_VARIABLES" />
+          <option name="PASS_PARENT_ENVS" value="true" />
+          <module name="" />
+          <envs />
+          <method />
+        </configuration>
+        <configuration default="false" name="StandAloneAppServer" type="Application" factoryName="Application" singleton="true">
+          <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+          <option name="MAIN_CLASS_NAME" value="com.idi.framework.StandAloneAppServer" />
+          <option name="VM_PARAMETERS" value="-ea -XX:MaxDirectMemorySize=30m -Xmx1024m" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+          <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+          <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+          <option name="ALTERNATIVE_JRE_PATH" value="" />
+          <option name="ENABLE_SWING_INSPECTOR" value="false" />
+          <option name="ENV_VARIABLES" />
+          <option name="PASS_PARENT_ENVS" value="true" />
+          <module name="" />
+          <envs />
+          <method />
+        </configuration>
+        <configuration default="false" name="ClientZoneServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+          <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+          <option name="SPRING_BOOT_MAIN_CLASS" value="com.idi.pearl.clientzone.war.ClientZoneServer" />
+          <option name="VM_PARAMETERS" value="-ea -XX:MaxDirectMemorySize=30m -Xmx1024m" />
+          <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+          <module name="" />
+          <envs />
+          <method />
+        </configuration>
+        <configuration default="false" name="CrmServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+          <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+          <option name="SPRING_BOOT_MAIN_CLASS" value="com.idi.pearl.crm.war.CrmServer" />
+          <option name="VM_PARAMETERS" value="-ea -XX:MaxDirectMemorySize=30m -Xmx1024m" />
+          <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+          <module name="" />
+          <envs />
+          <method />
+        </configuration>
+        <configuration default="false" name="Applet" type="Remote" factoryName="Remote">
+          <option name="USE_SOCKET_TRANSPORT" value="true" />
+          <option name="SERVER_MODE" value="false" />
+          <option name="SHMEM_ADDRESS" value="javadebug" />
+          <option name="HOST" value="localhost" />
+          <option name="PORT" value="2502" />
+          <method />
+        </configuration>
+        <configuration default="false" name="Local JBoss" type="Remote" factoryName="Remote">
+          <option name="USE_SOCKET_TRANSPORT" value="true" />
+          <option name="SERVER_MODE" value="false" />
+          <option name="SHMEM_ADDRESS" value="javadebug" />
+          <option name="HOST" value="localhost" />
+          <option name="PORT" value="8787" />
+          <method />
+        </configuration>
+        <configuration default="false" name="j1ut1" type="Remote" factoryName="Remote">
+          <option name="USE_SOCKET_TRANSPORT" value="true" />
+          <option name="SERVER_MODE" value="false" />
+          <option name="SHMEM_ADDRESS" value="javadebug" />
+          <option name="HOST" value="j1ut1" />
+          <option name="PORT" value="8707" />
+          <method />
+        </configuration>
+        <configuration default="false" name="j1ut2" type="Remote" factoryName="Remote">
+          <option name="USE_SOCKET_TRANSPORT" value="true" />
+          <option name="SERVER_MODE" value="false" />
+          <option name="SHMEM_ADDRESS" value="javadebug" />
+          <option name="HOST" value="j1ut2" />
+          <option name="PORT" value="8708" />
+          <method />
+        </configuration>
+        <list size="8">
+          <item index="0" class="java.lang.String" itemvalue="Application.LogServer" />
+          <item index="1" class="java.lang.String" itemvalue="Application.StandAloneAppServer" />
+          <item index="2" class="java.lang.String" itemvalue="Spring Boot.ClientZoneServer" />
+          <item index="3" class="java.lang.String" itemvalue="Spring Boot.CrmServer" />
+          <item index="4" class="java.lang.String" itemvalue="Remote.Applet" />
+          <item index="5" class="java.lang.String" itemvalue="Remote.Local JBoss" />
+          <item index="6" class="java.lang.String" itemvalue="Remote.j1ut1" />
+          <item index="7" class="java.lang.String" itemvalue="Remote.j1ut2" />
+        </list>
+        <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+          <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -ea" />
+        </configuration>
+        <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+          <Host>localhost</Host>
+          <Port>5050</Port>
+        </configuration>
+      </component>
+      <component name="SvnConfiguration" myUseAcceleration="nothing">
+        <configuration>C:\Users\avishay\AppData\Roaming\Subversion</configuration>
+      </component>
+      <component name="VcsContentAnnotationSettings">
+        <option name="myLimit" value="2678400000" />
+      </component>
+      <component name="VcsManagerConfiguration">
+        <option name="myTodoPanelSettings">
+          <TodoPanelSettings />
+        </option>
+      </component>
+      <component name="masterDetails">
+        <states>
+          <state key="GlobalLibrariesConfigurable.UI">
+            <settings>
+              <splitter-proportions>
+                <option name="proportions">
+                  <list>
+                    <option value="0.2036824" />
+                  </list>
+                </option>
+              </splitter-proportions>
+            </settings>
+          </state>
+          <state key="JdkListConfigurable.UI">
+            <settings>
+              <last-edited>1.6</last-edited>
+              <splitter-proportions>
+                <option name="proportions">
+                  <list>
+                    <option value="0.2036824" />
+                  </list>
+                </option>
+              </splitter-proportions>
+            </settings>
+          </state>
+          <state key="ProjectJDKs.UI">
+            <settings>
+              <last-edited>1.6</last-edited>
+              <splitter-proportions>
+                <option name="proportions">
+                  <list>
+                    <option value="0.2" />
+                  </list>
+                </option>
+              </splitter-proportions>
+            </settings>
+          </state>
+          <state key="ProjectLibrariesConfigurable.UI">
+            <settings>
+              <splitter-proportions>
+                <option name="proportions">
+                  <list>
+                    <option value="0.2" />
+                  </list>
+                </option>
+              </splitter-proportions>
+            </settings>
+          </state>
+        </states>
+      </component>
+    </defaultProject>
+  </component>
+</application>

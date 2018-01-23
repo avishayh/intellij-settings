@@ -1,0 +1,61 @@
+<templateSet group="ui">
+  <template name="tf" value="&#9;private com.idi.framework.gui.client.field.IDITextField $NAME$Tf;&#10;&#9;&#10;&#9;private com.idi.framework.gui.client.field.IDITextField get$CAP_NAME$Tf() {&#10;&#9;&#9;if ($NAME$Tf == null) {&#10;&#9;&#9;&#9;$NAME$Tf = new com.idi.framework.gui.client.field.IDITextField($COLUMNS$);&#9;&#9;&#9;&#10;&#9;&#9;&#9;$NAME$Tf.setRelativeDataName(&quot;$NAME$&quot;);&#10;            $NAME$Tf.setFormatter(new $FORMAT$);&#10;&#9;&#9;}&#10;&#9;&#9;return $NAME$Tf;&#10;&#9;}" shortcut="TAB" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAP_NAME" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="false" />
+    <variable name="COLUMNS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FORMAT" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="PHP" value="false" />
+    </context>
+  </template>
+  <template name="lb" value="&#9;private com.idi.framework.gui.client.label.IDILabel $NAME$Lb;&#10;&#9;&#10;&#9;private com.idi.framework.gui.client.label.IDILabel get$CAP_NAME$Lb() {&#10;&#9;&#9;if ($NAME$Lb == null) {&#10;&#9;&#9;&#9;$NAME$Lb = new com.idi.framework.gui.client.label.IDILabel();&#9;&#9;&#9;&#10;&#9;&#9;&#9;$NAME$Lb.setRelativeDataName(&quot;$NAME$&quot;);&#10;&#9;&#9;&#9;$NAME$Lb.setFormatter(new $FORMAT$);&#10;&#9;&#9;&#9;$NAME$Lb.setTextFieldLAF();&#10;&#9;&#9;}&#10;&#9;&#9;return $NAME$Lb;&#10;&#9;}" shortcut="TAB" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAP_NAME" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="false" />
+    <variable name="FORMAT" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="PHP" value="false" />
+    </context>
+  </template>
+  <template name="dtf" value="&#9;private com.idi.framework.gui.client.field.DateTextField $NAME$Tf;&#10;&#9;&#10;&#9;private com.idi.framework.gui.client.field.DateTextField get$CAP_NAME$Tf() {&#10;&#9;&#9;if ($NAME$Tf == null) {&#10;&#9;&#9;&#9;$NAME$Tf = new com.idi.framework.gui.client.field.DateTextField(true);&#9;&#9;&#9;&#10;&#9;&#9;&#9;$NAME$Tf.setRelativeDataName(&quot;$NAME$&quot;);            &#10;&#9;&#9;}&#10;&#9;&#9;return $NAME$Tf;&#10;&#9;}" shortcut="TAB" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAP_NAME" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="PHP" value="false" />
+    </context>
+  </template>
+  <template name="ta" value="&#9;private com.idi.framework.gui.client.textarea.IDITextArea $NAME$Ta;&#10;&#9;&#10;&#9;private com.idi.framework.gui.client.textarea.IDITextArea get$CAP_NAME$Ta() {&#10;&#9;&#9;if ($NAME$Ta == null) {&#9;&#9; &#10;&#9;&#9;&#9;$NAME$Ta = new com.idi.framework.gui.client.textarea.IDITextArea(IDITextArea.FOUR_LINES_MODE);&#10;&#9;&#9;&#9;$NAME$Ta.setRelativeDataName(&quot;$NAME$&quot;);            &#10;&#9;&#9;}&#10;&#9;&#9;return $NAME$Ta;&#10;&#9;}" shortcut="TAB" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAP_NAME" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="PHP" value="false" />
+    </context>
+  </template>
+  <template name="tbl" value="&#9;private com.idi.framework.gui.client.table.IDITable $NAME$Tbl;&#10;&#9;&#10;&#9;private com.idi.framework.gui.client.table.IDITable get$CAP_NAME$Tbl() {&#10;&#9;&#9;if ($NAME$Tbl == null) {&#10;            $NAME$Tbl = new com.idi.framework.gui.client.table.IDITable();&#10;            $NAME$Tbl.setPreferredSize(new Dimension($DMN$));&#10;            $NAME$Tbl.setDataNameForList(&quot;$NAME$&quot;);            &#10;            $NAME$Tbl.createColumn(&quot;fieldName&quot;).setDsc(&quot;תאור&quot;).setSize(10);&#9;&#9;&#9;&#10;&#9;&#9;}&#10;&#9;&#9;return $NAME$Tbl;&#10;&#9;}" shortcut="TAB" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAP_NAME" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="false" />
+    <variable name="DMN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="PHP" value="false" />
+    </context>
+  </template>
+</templateSet>

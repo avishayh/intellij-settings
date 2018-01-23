@@ -1,0 +1,45 @@
+<templateSet group="jeka">
+  <template name="paramset" value="@com.idi.framework.vo.common.vo.annotations.Property&#10;@com.idi.framework.util.jdbc.api.annotation.Param(name =&quot;$PARAM_NAME$&quot;)&#10;void set$PROPERTY_NAME$($PROPERTY_TYPE$ $D_PROPERTY_NAME$);" description="add settor to qeury vo" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAM_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="D_PROPERTY_NAME" expression="decapitalize(PROPERTY_NAME)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="ASPECTJ" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="PHP" value="false" />
+    </context>
+  </template>
+  <template name="paramget" value="@com.idi.framework.vo.common.vo.annotations.Property&#10;@com.idi.framework.util.jdbc.api.annotation.Param(name =&quot;$PARAM_NAME$&quot;)&#10;$PROPERTY_TYPE$ get$PROPERTY_NAME$();" description="add getter to param" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAM_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ASPECTJ" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="PHP" value="false" />
+    </context>
+  </template>
+  <template name="dudi" value="System.out.println(&quot;Dudi&quot;);" description="prints Dudi name" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ASPECTJ" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="PHP" value="false" />
+    </context>
+  </template>
+</templateSet>

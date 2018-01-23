@@ -1,0 +1,13 @@
+<application>
+  <component name="LanguageInjectionConfiguration">
+    <option name="SOURCE_MODIFICATION_ALLOWED" value="true" />
+    <injection language="Sybase" injector-id="java">
+      <display-name>SQL.value (com.idi.framework.util.jdbc.api.annotation)</display-name>
+      <place><![CDATA[psiMethod().withName("value").withParameters().definedInClass("com.idi.framework.util.jdbc.api.annotation.SQL")]]></place>
+    </injection>
+    <injection language="Sybase" injector-id="xml">
+      <display-name>query</display-name>
+      <place><![CDATA[xmlTag().withLocalName(string().equalTo("query"))]]></place>
+    </injection>
+  </component>
+</application>

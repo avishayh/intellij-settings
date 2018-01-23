@@ -1,0 +1,110 @@
+<application>
+  <component name="LocalDatabaseDriverManager" version="163">
+    <driver id="h2.unified">
+      <artifact name="H2" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="azure.ms">
+      <artifact name="SQL Server" use="true" />
+      <option name="auto-sync" value="false" />
+    </driver>
+    <driver id="oracle">
+      <artifact name="Oracle" use="true" />
+      <option name="auto-sync" value="true" />
+      <option name="auto-commit" value="false" />
+    </driver>
+    <driver id="derby.embedded">
+      <artifact name="Apache Derby" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="sybase.jtds">
+      <artifact name="jTDS (SQL Server and Sybase)" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="sqlserver.jtds">
+      <artifact name="jTDS (SQL Server and Sybase)" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="b6572169-a960-407d-b832-b0a7b2994816" name="REP-PROD3 driver" dialect="Sybase" driver-class="com.sybase.jdbc4.jdbc.SybDriver" icon="AllIcons.Providers.Sybase">
+      <url-template name="default" template="jdbc:sybase:Tds:{host::localhost}:{port::5000}/{database::master}[\?&lt;&amp;,user={user:param},password={password:param},{:identifier}={:param}&gt;&amp;?]" />
+      <option name="auto-sync" value="true" />
+      <library>
+        <url>file://$MAVEN_REPOSITORY$/sybase/jconn/4/jconn-4.jar</url>
+      </library>
+    </driver>
+    <driver id="hsqldb.local">
+      <artifact name="HSQLDB" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="derby.remote">
+      <artifact name="Apache Derby" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="b418c780-c644-4ab8-ba3d-a6f2f89e3393" name="TEST driver" dialect="Sybase" driver-class="com.sybase.jdbc4.jdbc.SybDriver" icon="AllIcons.Providers.Sybase">
+      <url-template name="default" template="jdbc:sybase:Tds:{host::localhost}:{port::5000}/{database::master}[\?&lt;&amp;,user={user:param},password={password:param},{:identifier}={:param}&gt;&amp;?]" />
+      <option name="auto-sync" value="true" />
+      <option name="auto-commit" value="true" />
+      <option name="send-app-info" value="true" />
+      <library>
+        <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/jconn-4.jar</url>
+      </library>
+    </driver>
+    <driver id="sqlite.xerial">
+      <artifact name="Xerial SQLiteJDBC" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="sybase.ase">
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="postgresql">
+      <artifact name="PostgreSQL" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="redshift">
+      <artifact name="Redshift" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="db2">
+      <artifact name="DB2" use="true" />
+      <option name="auto-sync" value="false" />
+    </driver>
+    <driver id="sqlserver.ms">
+      <artifact name="SQL Server" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="java.sql.Driver" name="USERTEST" dialect="Sybase" driver-class="com.sybase.jdbc4.jdbc.SybDriver">
+      <option name="auto-commit" value="true" />
+      <option name="auto-sync" value="true" />
+      <option name="send-app-info" value="true" />
+      <library>
+        <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/jconn-4.jar</url>
+      </library>
+    </driver>
+    <driver id="498dff09-704f-4e9b-b71c-995e6c86cacd" name="REP driver" dialect="Sybase" driver-class="com.sybase.jdbc4.jdbc.SybDriver" icon="AllIcons.Providers.Sybase">
+      <url-template name="default" template="jdbc:sybase:Tds:{host::localhost}:{port::5000}/{database::master}[\?&lt;&amp;,user={user:param},password={password:param},{:identifier}={:param}&gt;&amp;?]" />
+      <option name="auto-sync" value="true" />
+      <library>
+        <url>file://$MAVEN_REPOSITORY$/sybase/jconn/4/jconn-4.jar</url>
+      </library>
+    </driver>
+    <driver id="db2.jtopen">
+      <artifact name="JTOpen (DB2 iSeries)" use="true" />
+      <option name="auto-sync" value="false" />
+    </driver>
+    <driver id="mysql">
+      <artifact name="MySQL Connector/J" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+    <driver id="520979de-4f65-44f9-99bf-f17155d39ffc" name="REP-MINE driver" dialect="Sybase" driver-class="com.sybase.jdbc4.jdbc.SybDriver" icon="AllIcons.Providers.Sybase">
+      <url-template name="default" template="jdbc:sybase:Tds:{host::localhost}:{port::5000}/{database::master}[\?&lt;&amp;,user={user:param},password={password:param},{:identifier}={:param}&gt;&amp;?]" />
+      <option name="auto-sync" value="true" />
+      <library>
+        <url>file://C:/Config/.m2/repository/sybase/jconn/4/jconn-4.jar</url>
+      </library>
+    </driver>
+    <driver id="hsqldb.remote">
+      <artifact name="HSQLDB" use="true" />
+      <option name="auto-sync" value="true" />
+    </driver>
+  </component>
+</application>

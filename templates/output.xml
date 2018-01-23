@@ -1,0 +1,7 @@
+<templateSet group="output">
+  <template name="sout" value="System.out.println(&quot;$END$&quot;);" description="Prints a string to System.out" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,46 @@
+<templateSet group="other">
+  <template name="as" value="Assert." description="use Assert..." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="main" value="/**&#10; * Execution entry method.&#10; @param args&#9;The runtime arguments for the this executable.&#10; * @throws Exception &#9;An exception which may be thrown and cannot be caught anywhere.&#10; */&#10;public static void main(final String[] args) throws Exception {&#10;  $END$&#10;}" description="main() method declaration" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="prop" value="@com.idi.framework.vo.common.vo.annotations.Property&#10;$PROPERTY_TYPE$ get$PROPERTY_NAME$();&#10;void set$PROPERTY_NAME$($PROPERTY_TYPE$ $D_PROPERTY_NAME$);" description="VO2 property" toReformat="true" toShortenFQNames="true">
+    <variable name="PROPERTY_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="D_PROPERTY_NAME" expression="decapitalize(PROPERTY_NAME)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="sb" value="final StringBuilder sb = new StringBuilder(16);" description="Introduce StringBuilder" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="single" value="private static final $CLASS_NAME$ instance = new $CLASS_NAME$();&#10;&#10;private $CLASS_NAME$() {&#10;&#9;// singleton&#10;}&#10;&#10;public static $CLASS_NAME$ getInstance() {&#10;&#9;return instance;&#10;}" description="Singleton pattren naive implementation" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+</templateSet>
