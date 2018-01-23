@@ -1,9 +1,0 @@
-<application>
-  <component name="FileTypeManager" version="14">
-    <ignoreFiles list="*.hprof;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.bundle;.git;.happypack;.hg;.svn;.tox;CVS;RCS;SCCS;__pycache__;_svn;node_modules*;rcs;" />
-    <extensionMap>
-      <mapping pattern="dictionary" type="PLAIN_TEXT" />
-      <mapping ext="ejs" type="PLAIN_TEXT" />
-    </extensionMap>
-  </component>
-</application>
